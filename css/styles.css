@@ -1,0 +1,122 @@
+body {
+	background-color: #CCCCFF;
+	
+}
+
+table {
+	width: 95%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	background-color: #FFFFFF;
+}
+
+td {
+	padding: 1px 5px;
+	vertical-align: top;
+}
+
+th {
+	background-color: #dddddd;
+	vertical-align: top;
+}
+
+th span {
+	font-weight: normal;
+}
+
+th.title {
+	width: 54px;
+}
+
+td.title {
+	text-align: left;
+	font-weight: bold;
+}
+
+th.dep-apt {
+	width: 37px;
+}
+
+td.dep-apt {
+}
+
+th.desp-apt {
+	width: 37px;
+}
+
+td.desp-apt {
+}
+
+th.altitude {
+	width: 32px;
+}
+
+td.altitude {
+}
+
+th.flight-rule {
+	width: 30px;
+}
+
+td.flight-rule {
+	font-weight: bold;
+}
+
+th.arr-time {
+	width: 35px;
+}
+
+td.arr-time {
+}
+
+th.dep-time {
+	width: 35px;
+}
+
+td.dep-time {
+}
+
+th.act-type {
+	width: 35px;
+}
+
+td.act-type {
+}
+
+th.route {
+	text-align: left;
+	padding: 0 5px;
+}
+
+td.route {
+	text-align: left;
+}
+
+th.squawk {
+	width: 68px;
+}
+
+td.squawk {
+}
+
+.squawk a {
+	text-decoration: none;
+	color: #000000;
+}
+.squawk a:hover {
+	color: #FF0000;
+}
+
+tr.transponder-ok {
+	background-color: #c0c0c0;
+}
+
+.text {
+	width: 95%;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	padding: 0 2.5%;	
+}
