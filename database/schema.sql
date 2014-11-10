@@ -1,0 +1,36 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+-- --------------------------------------------------------
+
+DROP TABLE IF EXISTS `ssr_assigned_codes`;
+CREATE TABLE IF NOT EXISTS `ssr_assigned_codes` (
+  `id` bigint(20) unsigned NOT NULL,
+  `callsign` varchar(7) NOT NULL,
+  `datetime` datetime NOT NULL,
+  `assignedCode` varchar(4) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `ssr_codes`;
+CREATE TABLE IF NOT EXISTS `ssr_codes` (
+  `name` varchar(64) NOT NULL,
+  `value` varchar(4) NOT NULL,
+  `flag` tinyint(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+ALTER TABLE `ssr_assigned_codes`
+ ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `ssr_codes`
+ ADD UNIQUE KEY `name` (`name`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
